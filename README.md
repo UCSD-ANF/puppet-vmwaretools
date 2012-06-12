@@ -1,6 +1,8 @@
 Puppet VMware Tools OSP Module
 ==============================
 
+Release 4.0.1-ANF20120612-01
+TESTS NOT WORKING
 [![Build Status](https://secure.travis-ci.org/razorsedge/puppet-vmwaretools.png?branch=master)](http://travis-ci.org/razorsedge/puppet-vmwaretools)
 
 Introduction
@@ -40,7 +42,7 @@ Examples
 Notes
 -----
 
-* Only tested on CentOS 5.5 and CentOS 6.2 x86_64 with 4.0latest.
+* Only tested on CentOS CentOS 6.2 x86_64 with 5.0 point release.
 * Not supported on Fedora.
 
 Issues
@@ -58,4 +60,5 @@ Copyright
 ---------
 
 Copyright (C) 2011 Mike Arnold <mike@razorsedge.org>
+Copyright (C) 2012 The Regents of the University of California
 
