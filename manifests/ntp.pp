@@ -41,19 +41,19 @@ class vmwaretools::ntp {
 
   case $::virtual {
     'vmware': {
-      if $vmwaretools::package_name == '' {
-        fail ('class vmwaretools must be declared in order to use vmwaretools::ntp')
+      if $::vmwaretools::package_name == '' {
+        fail('The class vmwaretools must be declared in the catalog in order to use this class')
       }
       # tools.syncTime = "FALSE" should be in the guest's vmx file and NTP
       # should be in use on the guest.  http://kb.vmware.com/kb/1006427
       exec { 'vmware-tools.syncTime':
-        command     => $vmwaretools::service_pattern ? {
+        command     => $::vmwaretools::service_pattern ? {
           'vmtoolsd' => 'vmware-toolbox-cmd timesync disable',
           default    => 'vmware-guestd --cmd "vmx.set_option synctime 1 0" || true',
         },
         path        => '/usr/bin:/usr/sbin',
         returns     => [ 0, 1, ],
-        require     => Package[$vmwaretools::package_name],
+        require     => Package[$::vmwaretools::package_name],
         refreshonly => true,
       }
     }
