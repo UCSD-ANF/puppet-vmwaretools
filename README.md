@@ -1,9 +1,8 @@
 Puppet VMware Tools OSP Module
 ==============================
 
-Release 4.0.1-ANF20120708-01
-TESTS WORKING BUT NO TRAVIS
-[![Build Status](https://secure.travis-ci.org/razorsedge/puppet-vmwaretools.png?branch=master)](http://travis-ci.org/razorsedge/puppet-vmwaretools)
+Release 4.0.1-ANF20120709-01
+[![Build Status](https://secure.travis-ci.org/UCSD-ANF/puppet-vmwaretools.png?branch=master)](http://travis-ci.org/UCSD-ANF/puppet-vmwaretools)
 
 Introduction
 ------------
